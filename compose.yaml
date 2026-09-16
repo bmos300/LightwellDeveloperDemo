@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  artifactory:
+    image: releases-docker.jfrog.io/jfrog/artifactory-oss:7.77.10
+    container_name: artifactory
+    ipc: host
+    ports:
+      - "8081:8081"
+      - "8082:8082"
+    environment:
+      # Force microservices to communicate strictly over internal container loopback
+      - JF_SHARED_NODE_IP=127.0.0.1
+      
+      # Master Keys
+      - JF_SHARED_SECURITY_MASTERKEY=FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      - JF_SHARED_SECURITY_JOINKEY=FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      
+      # Allocation
+      - JF_SHARED_EXTRAJAVAOPTS=-Xms2g -Xmx3g
+      
+      # Single-Tenant Local Mode
+      - JF_SHARED_RESTRICTEDMODE_ENABLED=true
+    volumes:
+      - artifactory_data:/opt/jfrog/artifactory/var
+
+volumes:
+  artifactory_data:
