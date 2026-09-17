@@ -50,7 +50,7 @@ podman logs artifactory | grep -i "successfully started"
 
 ## 3. Connect Lightwell to Artifactory
 > 🎬 **Note:** Due to file size limits, the video walkthrough cannot be played inline. 
-> Please [download and watch the screen recording here](./Lightwell%20Repo%20Auth%20&%20Mirroring.mp4).%  
+> Please [download and watch the screen recording here](./Lightwell%20Repo%20Auth%20&%20Mirroring.mp4).  
 
 ## 4. Configure Maven Integration to Maven Central and your local Artifactory
 
