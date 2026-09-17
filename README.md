@@ -5,7 +5,9 @@ This demo illustrates the end-to-end integration flow from the **Red Hat Lightwe
 
 The primary goal is to demonstrate what happens when an underlying application package changes—showing both the impact on downstream builds and how this workflow empowers developers with seamless dependency updates.
 
-[Architecture Slide](./docs/LightwelltoArtifactorytoVSCode.pdf)
+## Architecture Slide
+
+<embed src="./docs/LightwelltoArtifactorytoVSCode.pdf" type="application/pdf" width="100%" height="600px" />%
 
 ---
 
