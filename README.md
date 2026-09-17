@@ -1,9 +1,30 @@
-# JFrog Lightwell Demo
+# Lightwell Developer Demo
 
-## Prerequisites
-Ensure Podman and Maven are installed on your machine before setup.
+## Overview
+This demo illustrates the end-to-end integration flow from the **Red Hat Lightwell Repository** to **JFrog Artifactory**, and ultimately to the **Java Developer** using Maven for builds. 
 
-## 1. Environment Setup (Mac)
+The primary goal is to demonstrate what happens when an underlying application package changes—showing both the impact on downstream builds and how this workflow empowers developers with seamless dependency updates.
+
+---
+
+## Getting Started
+
+### Prerequisites
+Before running this demo, ensure you have the following installed and configured on your local machine:
+
+* **Java Development Kit (JDK):** Version 11 or higher
+* **Apache Maven:** Version 3.8+ configured for local builds
+* **Podman Desktop:** Downloaded, installed, and running locally
+* **Red Hat Lightwell Repository Access:** Active account credentials/tokens configured to pull from the Red Hat Lightwell Registry
+* **JFrog Artifactory Access:** Server URL and authentication token for artifact resolution
+
+---
+
+## Environment Setup
+
+## 1. Setting up JFrog (Mac)
+
+On your own download releases-docker.jfrog.io/jfrog/artifactory-oss:7.77.10
 Run the following commands to create the environment directory:
 
 ```bash
