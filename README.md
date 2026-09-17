@@ -5,6 +5,8 @@ This demo illustrates the end-to-end integration flow from the **Red Hat Lightwe
 
 The primary goal is to demonstrate what happens when an underlying application package changes—showing both the impact on downstream builds and how this workflow empowers developers with seamless dependency updates.
 
+[Architecture Slide](./docs/LightwelltoArtifactorytoVSCode.pdf)
+
 ---
 
 ## Getting Started
@@ -72,3 +74,6 @@ Build and execute the Java application from within vscode.:
 mvn clean package
 mvn exec:java -Dexec.mainClass="com.example.App"
 ```
+
+
+[def]: ./docs/LightwelltoArtifactorytoVSCode.pdf
