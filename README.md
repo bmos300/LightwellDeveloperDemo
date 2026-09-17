@@ -44,8 +44,11 @@ podman logs artifactory | grep -i "successfully started"
 
 > **Note:** Access the web interface at **http://localhost:8082** (main JFrog Gateway) rather than port 8081.
 
+## 3. Connect Lightwell to Artifactory
 ![Screen recording demonstrating authentication and artifact mirroring between the Red Hat Lightwell Repository and JFrog Artifactory in a developer setup environment](Lightwell Repo Auth & Mirroring.mp4)
-## 3. Configure Maven Integration
+
+## 3. Configure Maven Integration to Maven Central and your local Artifactory
+## 3. Configure Maven Integration to Maven Central and your local Artifactory
 1. Connect Lightwell to JFrog and connect your editor (VS Code) to JFrog[cite: 1].
 2. Move the `settings.xml` file into your local Maven directory (`~/.m2/settings.xml`):
 
