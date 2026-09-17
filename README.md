@@ -7,7 +7,7 @@ The primary goal is to demonstrate what happens when an underlying application p
 
 ## Architecture Slide
 
-<embed src="./docs/LightwelltoArtifactorytoVSCode.pdf" type="application/pdf" width="100%" height="600px" />%
+<embed src="./docs/LightwelltoArtifactorytoVSCode.pdf" type="application/pdf" width="100%" height="600px" />
 
 ---
 
