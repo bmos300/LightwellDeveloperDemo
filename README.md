@@ -47,10 +47,9 @@ podman logs artifactory | grep -i "successfully started"
 ## 3. Connect Lightwell to Artifactory
 ![Screen recording demonstrating authentication and artifact mirroring between the Red Hat Lightwell Repository and JFrog Artifactory in a developer setup environment](Lightwell Repo Auth & Mirroring.mp4)
 
-## 3. Configure Maven Integration to Maven Central and your local Artifactory
-## 3. Configure Maven Integration to Maven Central and your local Artifactory
-1. Connect Lightwell to JFrog and connect your editor (VS Code) to JFrog[cite: 1].
-2. Move the `settings.xml` file into your local Maven directory (`~/.m2/settings.xml`):
+## 4. Configure Maven Integration to Maven Central and your local Artifactory
+
+1. Move the `settings.xml` file into your local Maven directory (`~/.m2/settings.xml`):
 
 ```bash
 mkdir -p ~/.m2
@@ -59,7 +58,7 @@ cp settings.xml ~/.m2/settings.xml
 
 *Be sure to update `settings.xml` with your personal encrypted password or token.*
 
-## 4. Run the Application
+## 5. Run the Application
 
 First take the my-app.tar.gz and uncompress and then bringup in vscode.
 ```bash
