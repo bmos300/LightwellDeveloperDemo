@@ -7,6 +7,8 @@ The primary goal is to demonstrate what happens when an underlying application p
 
 ## Architecture Slide
 
+![Architecture Diagram](./docs/Architecture.png)
+
 <embed src="./docs/LightwelltoArtifactorytoVSCode.pdf" type="application/pdf" width="100%" height="600px" />
 
 ---
