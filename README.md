@@ -50,11 +50,11 @@ podman logs artifactory | grep -i "successfully started"
 
 ## 3. Connect Lightwell to Artifactory
 > 🎬 **Note:** Due to file size limits, the video walkthrough cannot be played inline. 
-> Please [download and watch the screen recording here](./Lightwell%20Repo%20Auth%20&%20Mirroring.mp4).  
+> Please [download and watch the screen recording here](./artifactorysetup.mp4).  
 
 ## 4. Configure Maven Integration to Maven Central and your local Artifactory
 
-1. Move the `settings.xml` file into your local Maven directory (`~/.m2/settings.xml`):
+1. Move the `settings.xml.example` file into your local Maven directory (`~/.m2/settings.xml`) and make the necessary changes:
 
 ```bash
 mkdir -p ~/.m2
