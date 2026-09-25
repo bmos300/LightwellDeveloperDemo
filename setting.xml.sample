@@ -1,0 +1,56 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.2.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.2.0 https://maven.apache.org/xsd/settings-1.2.0.xsd">
+
+  <servers>
+    <server>
+      <id>artifactory-virtual</id>
+      <username>admin</username>
+      <password></password>
+    </server>
+  </servers>
+
+  <mirrors>
+    <mirror>
+      <id>artifactory-virtual</id>
+      <mirrorOf>*</mirrorOf>
+      <name>Local Artifactory Virtual Repository</name>
+      <url>http://localhost:8082/artifactory/maven-virtual/</url>
+    </mirror>
+  </mirrors>
+
+  <profiles>
+    <profile>
+      <id>artifactory</id>
+      <repositories>
+        <repository>
+          <id>artifactory-virtual</id>
+          <url>http://localhost:8082/artifactory/maven-virtual/</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <id>artifactory-virtual</id>
+          <url>http://localhost:8082/artifactory/maven-virtual/</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>
+  </profiles>
+
+  <activeProfiles>
+    <activeProfile>artifactory</activeProfile>
+  </activeProfiles>
+
+</settings>
