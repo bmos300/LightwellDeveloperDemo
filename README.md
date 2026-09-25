@@ -70,7 +70,7 @@ First take the my-app.tar.gz and uncompress and then bringup in vscode.
 tar -xzf my-app.tar.gz
 ```
 
-In the vscode marketplace install the Red Hat Dependency Analytics (RHDA)
+In the vscode marketplace install the **Red Hat Dependency Analytics (RHDA)**
 Make sure you see the following in your pom.xml file:
 ```
        <dependency>
@@ -79,13 +79,13 @@ Make sure you see the following in your pom.xml file:
             <version>1.7.25</version>
         </dependency>
 ```
-This exposes the following CVE-2018-8088:
+**This exposes the following CVE-2018-8088:**
 
 slf4j-ext:1.7.25 (and the SLF4J Extensions module in general) is primarily known in security contexts for a critical Java deserialization vulnerability tracked under CVE-2018-8088.Key DetailsVulnerability (CVE-2018-8088): An XML deserialization flaw exists within the EventData class constructor in slf4j-ext.   
 
-Impact: If an application passes an untrusted XML serialized string into EventData, it can be deserialized using XMLDecoder, allowing remote attackers to execute arbitrary code (RCE) on the host machine.Artifact 
+**Impact:** If an application passes an untrusted XML serialized string into EventData, it can be deserialized using XMLDecoder, allowing remote attackers to execute arbitrary code (RCE) on the host machine.Artifact 
 
-Function: Formally, the module is the SLF4J Extensions Module (org.slf4j:slf4j-ext), which adds supplementary features to the standard SLF4J logging facade, such as localized logging, extended logging interfaces (XLogger), and event logging.
+**Function:** Formally, the module is the SLF4J Extensions Module (org.slf4j:slf4j-ext), which adds supplementary features to the standard SLF4J logging facade, such as localized logging, extended logging interfaces (XLogger), and event logging.
 
 Now, you will see the 1.7.25 with the red squiggly line.  You can right click on your pom.xml and look at the dependency report, generate an sbom. You can also click on 1.7.25 which will create a lamp that you can click to fix the error.  In my case, my lightwell validated version is 2.0.9 so that is what gets placed in the pom.xml file.
 
