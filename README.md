@@ -96,6 +96,11 @@ You have corrected the issue and can now build and execute the Java application 
 mvn clean package
 mvn exec:java -Dexec.mainClass="com.example.App"
 ```
-
+ 
+ To ensure you are pulling the correct package:
+ ```
+ curl -I -u admin:password http://localhost:8082/artifactory/lightwellvalidated/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar
+ ```
+ Note: replace with **password** with your password. 
 
 [def]: ./docs/LightwelltoArtifactorytoVSCode.pdf
