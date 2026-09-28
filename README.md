@@ -8,7 +8,7 @@ The primary goal is to demonstrate what happens when an underlying application p
 ## Architecture Slide and Demo
 
 ![Architecture Diagram](./docs/Architecture.png)
-![Demonstration](./Architecture.png)
+![Demonstration](./demo.mp4)
 
 ---
 
