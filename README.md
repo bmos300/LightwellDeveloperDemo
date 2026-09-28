@@ -5,9 +5,10 @@ This demo illustrates the end-to-end integration flow from the **Red Hat Lightwe
 
 The primary goal is to demonstrate what happens when an underlying application package changes—showing both the impact on downstream builds and how this workflow empowers developers with seamless dependency updates.
 
-## Architecture Slide
+## Architecture Slide and Demo
 
 ![Architecture Diagram](./docs/Architecture.png)
+![Demonstration](./Architecture.png)
 
 ---
 
