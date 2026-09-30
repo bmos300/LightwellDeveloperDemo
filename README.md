@@ -66,9 +66,10 @@ cp settings.xml ~/.m2/settings.xml
 
 ## 5. Run the Application
 
-First take the my-app.tar.gz and uncompress and then bringup in vscode.
+Extract the sample app and open it in VS Code:
 ```bash
 tar -xzf my-app.tar.gz
+code my-app
 ```
 
 In the vscode marketplace install the **Red Hat Dependency Analytics (RHDA)**
