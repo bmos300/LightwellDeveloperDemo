@@ -105,3 +105,42 @@ mvn exec:java -Dexec.mainClass="com.example.App"
  Note: replace with **password** with your password. 
 
 [def]: ./docs/LightwelltoArtifactorytoVSCode.pdf
+
+---
+
+## Sample Application Source Code
+
+The `my-app/` directory contains the full Maven source code for the sample Java application used in this demo. This is the same application previously distributed as `my-app.tar.gz`, now available directly as source for easy reference and cloning.
+
+### Structure
+
+```
+my-app/
+├── pom.xml                          # Maven build file with intentional CVE dependency
+└── src/
+    └── main/
+        └── java/
+            └── com/
+                └── example/
+                    └── App.java     # Main application entry point
+```
+
+### Key dependency (intentional CVE for demo)
+
+```xml
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-ext</artifactId>
+    <version>1.7.25</version>
+</dependency>
+```
+
+This version exposes **CVE-2018-8088** — an XML deserialization RCE vulnerability — intentionally included to demonstrate vulnerability detection and remediation workflows.
+
+### Running from source
+
+```bash
+cd my-app
+mvn clean package
+mvn exec:java -Dexec.mainClass="com.example.App"
+```
